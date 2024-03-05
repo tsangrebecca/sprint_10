@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 pandas = "*"
+psycopg2-binary = "*"
+numpy = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
