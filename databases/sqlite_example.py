@@ -1,6 +1,6 @@
 # step 0
 import sqlite3
-import queries as q
+import queries_from_lecture as q
 import pandas as pd
 
 # DB connect function
@@ -35,11 +35,13 @@ def execute_q(conn, query):
 
 if __name__=='__main__':
     conn = connect_to_db()
-    # print(execute_q(conn, q.SELECT_ALL)[:5]) # if we just want the 1st 5
+    
+    print(execute_q(conn, q.GET_CHARACTERS)[:2]) # if we just want the 1st 5
     # print(results[:5])
-    results = execute_q(conn, q.AVG_ITEM_WEIGHT_PER_CHARACTER)
-    df = pd.DataFrame(results)
-    df.columns = ['Name', 'Average_item_weight']
 
-    # from SQL to csv
-    df.to_csv('rpg_db.csv', index=False) # don't keep row index as column
+    # results = execute_q(conn, q.AVG_ITEM_WEIGHT_PER_CHARACTER)
+    # df = pd.DataFrame(results)
+    # df.columns = ['Name', 'Average_item_weight']
+
+    # # from SQL to csv
+    # df.to_csv('rpg_db.csv', index=False) # don't keep row index as column

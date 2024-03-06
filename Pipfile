@@ -8,6 +8,7 @@ pandas = "*"
 psycopg2-binary = "*"
 numpy = "*"
 python-dotenv = "*"
+pymongo = "*"
 
 [dev-packages]
 

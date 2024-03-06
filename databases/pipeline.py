@@ -38,7 +38,7 @@ def modify_db(conn, curs, query):
 # # replaced by the function above
 
 if __name__== "__main__":
-    # getting characters from SQLite
+    # Get characters from SQLite
     sl_conn = connect_to_db()
     sl_characters = execute_q(sl_conn, GET_CHARACTERS)
     # print(sl_characters[:5])
