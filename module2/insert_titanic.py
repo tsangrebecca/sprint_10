@@ -24,6 +24,9 @@ def execute_query_pg(curs, conn, query):
     results = curs.execute(query) # don't need fetchall() with Postgres
     conn.commit()
     return results
+    # This function didn't work for module4 > postgresql_queries.py
+    #   but the fetchall() works as in databases > rpg_queries.py
+    #   WHY????
 
 # Write a query that will create the table
 CREATE_TITANIC_TABLE = '''

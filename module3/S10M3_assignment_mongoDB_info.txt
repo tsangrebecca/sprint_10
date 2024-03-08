@@ -1,0 +1,5 @@
+install driver:
+python -m pip install "pymongo[srv]"==3.6
+
+connection string:
+mongod+srv://tsangyrebecca:<password>@cluster0.exltnxc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

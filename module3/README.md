@@ -1,0 +1,1 @@
+MongoDB is much harder because the data is stored as dictionaries without any schema, so writing the code and knowing where to insert the data has to be specified in the code.
